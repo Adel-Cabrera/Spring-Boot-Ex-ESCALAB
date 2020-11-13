@@ -15,32 +15,32 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="usuario")
-public class Usuario {
+@Table(name="menu")
+public class Menu {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer idUsuario;
+	private Integer idMenu;
 	
 	@Column(name="nombre", nullable=false, length = 70)
 	private String nombre;
 	
-	@Column(name="clave", nullable=false, length = 70)
-	private String clave;
+	@Column(name="url", nullable=false, length = 70)
+	private String url;
 	
-	@Column(name="estado", nullable=false)
-	private boolean estado;
+	@Column(name="icono", nullable=false, length = 70)
+	private String icono;
 	
 	@ManyToMany(fetch=FetchType.EAGER, cascade = CascadeType.ALL)
-	@JoinTable(name="usuarios_roles", joinColumns = @JoinColumn(name="id_usuario", referencedColumnName = "idUsuario"), inverseJoinColumns = @JoinColumn(name="id_rol", referencedColumnName = "idRol"))
+	@JoinTable(name="menus_roles", joinColumns = @JoinColumn(name="idMenu"), inverseJoinColumns = @JoinColumn(name="idRol"))
 	List<Rol> roles;
 
-	public Integer getIdUsuario() {
-		return idUsuario;
+	public Integer getIdMenu() {
+		return idMenu;
 	}
 
-	public void setIdUsuario(Integer idUsuario) {
-		this.idUsuario = idUsuario;
+	public void setIdMenu(Integer idMenu) {
+		this.idMenu = idMenu;
 	}
 
 	public String getNombre() {
@@ -51,20 +51,20 @@ public class Usuario {
 		this.nombre = nombre;
 	}
 
-	public String getClave() {
-		return clave;
+	public String getUrl() {
+		return url;
 	}
 
-	public void setClave(String clave) {
-		this.clave = clave;
+	public void setUrl(String url) {
+		this.url = url;
 	}
 
-	public boolean isEstado() {
-		return estado;
+	public String getIcono() {
+		return icono;
 	}
 
-	public void setEstado(boolean estado) {
-		this.estado = estado;
+	public void setIcono(String icono) {
+		this.icono = icono;
 	}
 
 	public List<Rol> getRoles() {
@@ -77,4 +77,6 @@ public class Usuario {
 
 	
 	
+
+
 }

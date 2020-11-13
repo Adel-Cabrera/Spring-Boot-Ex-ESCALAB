@@ -32,7 +32,7 @@ public class Menu {
 	private String icono;
 	
 	@ManyToMany(fetch=FetchType.EAGER, cascade = CascadeType.ALL)
-	@JoinTable(name="menus_roles", joinColumns = @JoinColumn(name="idMenu"), inverseJoinColumns = @JoinColumn(name="idRol"))
+	@JoinTable(name="menus_roles", joinColumns = @JoinColumn(name="id_menu", referencedColumnName = "idMenu"), inverseJoinColumns = @JoinColumn(name="id_rol", referencedColumnName = "idRol"))
 	List<Rol> roles;
 
 	public Integer getIdMenu() {

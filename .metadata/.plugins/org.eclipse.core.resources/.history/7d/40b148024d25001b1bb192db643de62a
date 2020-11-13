@@ -27,11 +27,11 @@ public class Rol {
 	private String name;
 	
 	@ManyToMany(fetch=FetchType.EAGER, cascade = CascadeType.ALL)
-	@JoinTable(name="usuarios_roles", joinColumns = @JoinColumn(name="id_rol", referencedColumnName = "idRol"), inverseJoinColumns = @JoinColumn(name="id_usuario", referencedColumnName = "idUsuario"))
+	@JoinTable(name="usuarios_roles", joinColumns = @JoinColumn(name="idRol"), inverseJoinColumns = @JoinColumn(name="idUsuario"))
 	List<Usuario> usuarios;
 	
 	@ManyToMany(fetch=FetchType.EAGER, cascade = CascadeType.ALL)
-	@JoinTable(name="menus_roles", joinColumns = @JoinColumn(name="id_rol", referencedColumnName = "idRol"), inverseJoinColumns = @JoinColumn(name="id_menu", referencedColumnName = "idMenu"))
+	@JoinTable(name="menus_roles", joinColumns = @JoinColumn(name="idRol"), inverseJoinColumns = @JoinColumn(name="idMenu"))
 	List<Menu> menus;
 
 	public Integer getIdRol() {

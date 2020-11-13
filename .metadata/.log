@@ -739,3 +739,15 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-12 19:22:02.884
 !MESSAGE executing callback sts4.classpath.ebhMhtop SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-12 22:11:47.097
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ebhMhtop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-12 22:11:47.098
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ebhMhtop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-12 22:11:47.098
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-12 22:11:47.098
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ebhMhtop => OK
