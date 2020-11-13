@@ -1,0 +1,11 @@
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.url=jdbc:postgresql://localhost/mediappdb
+#spring.datasource.schema=mediappdb
+spring.datasource.username=postgres
+spring.datasource.password=delirando1
+
+spring.jpa.database=postgresql
+spring.jpa.show-sql=false
+hibernate.hbm2ddl.auto=create-drop
+#spring.jpa.generate-ddl = true
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect

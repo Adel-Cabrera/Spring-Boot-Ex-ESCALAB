@@ -1,0 +1,16 @@
+package com.example.app.escalab.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="paciente")
+public class Paciente {
+	
+	@Id
+	@GeneratedValue
+	private Integer id;
+
+}

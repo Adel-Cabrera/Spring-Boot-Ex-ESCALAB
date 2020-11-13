@@ -1,0 +1,7 @@
+package com.example.app.escalab.service.impl;
+
+import com.example.app.escalab.service.PacienteService;
+
+public class PacienteServiceImpl implements PacienteService{
+
+}

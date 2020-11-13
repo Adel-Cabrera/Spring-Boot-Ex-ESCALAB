@@ -1,0 +1,13 @@
+package com.example.app.escalab.service;
+
+import java.util.List;
+
+import com.example.app.escalab.model.Paciente;
+
+public interface PacienteService {
+	
+	List<Paciente> getAll();
+	
+	Paciente save(Paciente paciente);
+
+}

@@ -1,0 +1,39 @@
+package com.example.app.escalab.model;
+
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="rol")
+public class Rol {
+	
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer idRol;
+	
+	@Column(name="name", nullable=false, length = 70)
+	private String name;
+	
+	@ManyToMany(fetch=FetchType.LAZY)
+	@JoinTable(name="usuarios_roles", joinColumns = @JoinColumn(name="idRol"), inverseJoinColumns = @JoinColumn(name="idUsuario"))
+	List<Usuario> usuarios;
+	
+	@ManyToMany(fetch=FetchType.LAZY)
+	@JoinTable(name="menus_roles", joinColumns = @JoinColumn(name="idRol"), inverseJoinColumns = @JoinColumn(name="idMenu"))
+	List<Menu> menus;
+
+
+	
+
+}

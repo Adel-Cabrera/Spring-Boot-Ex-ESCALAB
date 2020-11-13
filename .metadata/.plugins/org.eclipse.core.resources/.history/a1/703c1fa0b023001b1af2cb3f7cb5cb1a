@@ -1,0 +1,9 @@
+package com.example.app.escalab.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.app.escalab.model.Paciente;
+
+public interface PacienteRepositoryInterface extends JpaRepository<Paciente, Integer> {
+
+}

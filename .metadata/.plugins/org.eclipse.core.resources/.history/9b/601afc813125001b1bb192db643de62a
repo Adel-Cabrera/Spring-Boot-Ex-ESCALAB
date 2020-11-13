@@ -1,0 +1,23 @@
+package com.example.app.escalab.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="usuario_rol")
+public class UsuarioRol {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer idUsuarioRol;
+	
+	private Integer idUsuario;
+	
+	private Integer idRol;
+
+
+
+}

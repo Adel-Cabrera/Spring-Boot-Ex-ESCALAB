@@ -1,0 +1,4 @@
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.url=jdbc:postgresql://localhost/mediappdb
+spring.datasource.username=adel.cabrera.mesina@gmail.com
+spring.datasource.password=delirando1
