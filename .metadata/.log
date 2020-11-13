@@ -1824,3 +1824,124 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:02:34.549
 !MESSAGE executing callback sts4.classpath.THDHdlYx SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:28.036
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.THDHdlYx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:28.039
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.THDHdlYx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:28.039
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:28.039
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.THDHdlYx => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:43.810
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:43.811
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@3a635c0a[org.springframework.tooling.boot.ls:1.17.0.202004200519(id=629)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:43.811
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.405
+!MESSAGE Boot LS startup time from start to initialized: 1592ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.438
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rhECVWRUisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.439
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.439
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.439
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.439
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.440
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.440
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.442
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.442
+!MESSAGE buffering callback sts4.classpath.rhECVWRU tarea-escalab-2.2 false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.443
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.444
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.445
+!MESSAGE buffering callback sts4.classpath.rhECVWRU test-app-escalab false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.445
+!MESSAGE executing callback sts4.classpath.rhECVWRU 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.447
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rhECVWRU => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:09:45.492
+!MESSAGE executing callback sts4.classpath.rhECVWRU SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-11-13 20:09:57.805
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:90)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:10:06.046
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.rhECVWRU
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:10:06.046
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.rhECVWRU
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:10:06.046
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-11-13 20:10:06.047
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.rhECVWRU => OK
